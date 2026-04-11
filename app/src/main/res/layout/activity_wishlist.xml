@@ -49,6 +49,18 @@
         android:padding="8dp"
         android:clipToPadding="false"/>
 
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: R$ 0,00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_app"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
     <Button
         android:id="@+id/btnClearWishlist"
         android:layout_width="match_parent"
