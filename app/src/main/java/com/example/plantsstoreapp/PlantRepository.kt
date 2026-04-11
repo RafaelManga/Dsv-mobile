@@ -3,12 +3,12 @@ package com.example.plantsstoreapp
 object PlantRepository {
 
     val suculentas = listOf(
-        Planta(1,  "Echeveria",       "Suculenta", "Planta compacta com folhas em roseta.",       "Regar a cada 10-14 dias. Precisa de muita luz solar direta. Evite excesso de água para não apodrecer a raiz.", R.drawable.defaultuserimg, preco = 25.90),
-        Planta(2,  "Aloe Vera",       "Suculenta", "Famosa pelas propriedades medicinais.",        "Regar a cada 2 semanas. Tolera sol pleno. Ótima para uso medicinal na pele.",               R.drawable.defaultuserimg, preco = 18.50),
-        Planta(3,  "Crassula",        "Suculenta", "Conhecida como árvore da felicidade.",         "Regar uma vez por semana no verão, quinzenal no inverno. Prefere locais bem iluminados.",   R.drawable.defaultuserimg, preco = 22.00),
-        Planta(4,  "Haworthia",       "Suculenta", "Ideal para ambientes internos com pouca luz.", "Regar a cada 10 dias. Tolera meia sombra, ideal para ambientes internos.",                 R.drawable.defaultuserimg, preco = 19.90),
-        Planta(5,  "Sedum",           "Suculenta", "Muito resistente ao calor e ao sol.",          "Regar semanalmente. Ótima para jardins externos, muito resistente ao calor.",              R.drawable.defaultuserimg, preco = 15.00),
-        Planta(6,  "Agave",           "Suculenta", "Extremamente resistente à seca.",              "Regar mensalmente. Extremamente resistente à seca e ao sol forte.",                        R.drawable.defaultuserimg, preco = 30.00)
+        Planta(1,  "Echeveria",       "Suculenta", "Planta compacta com folhas em roseta.",       "Regar a cada 10-14 dias. Precisa de muita luz solar direta. Evite excesso de água para não apodrecer a raiz.", R.drawable.echeveria, preco = 25.90),
+        Planta(2,  "Aloe Vera",       "Suculenta", "Famosa pelas propriedades medicinais.",        "Regar a cada 2 semanas. Tolera sol pleno. Ótima para uso medicinal na pele.",               R.drawable.aloevera, preco = 18.50),
+        Planta(3,  "Crassula",        "Suculenta", "Conhecida como árvore da felicidade.",         "Regar uma vez por semana no verão, quinzenal no inverno. Prefere locais bem iluminados.",   R.drawable.crassula, preco = 22.00),
+        Planta(4,  "Haworthia",       "Suculenta", "Ideal para ambientes internos com pouca luz.", "Regar a cada 10 dias. Tolera meia sombra, ideal para ambientes internos.",                 R.drawable.haworthia, preco = 19.90),
+        Planta(5,  "Sedum",           "Suculenta", "Muito resistente ao calor e ao sol.",          "Regar semanalmente. Ótima para jardins externos, muito resistente ao calor.",              R.drawable.sedum, preco = 15.00),
+        Planta(6,  "Agave",           "Suculenta", "Extremamente resistente à seca.",              "Regar mensalmente. Extremamente resistente à seca e ao sol forte.",                        R.drawable.agave, preco = 30.00)
     )
 
     val tropicais = listOf(
