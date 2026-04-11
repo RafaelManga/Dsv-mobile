@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/card_background">
+
+    <ImageView
+        android:id="@+id/imgCard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/defaultuserimg"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_bg"
+        android:clipToOutline="true"/>
+
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgCard"
+        android:layout_marginTop="5dp"
+        android:text="Tipo da planta"
+        android:textSize="10sp"
+        android:textColor="#A2A2A2"
+        android:fontFamily="@font/assistant_bold"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:text="Nome"
+        android:textSize="13sp"
+        android:fontFamily="@font/assistant_bold"/>
+
+    <ImageButton
+        android:id="@+id/addCartBtn"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_background"
+        android:src="@drawable/cart_add_icon"
+        android:scaleType="centerInside"
+        android:padding="3dp"
+        />
+    </RelativeLayout>
