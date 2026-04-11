@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundLight">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="110sp"
+            android:background="@color/backgroundLight"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/UserImage"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25sp"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/defaultuserimg"
+            app:civ_border_width="2sp"
+            app:civ_border_color="@color/dark_app"/>
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10sp"
+            android:layout_toLeftOf="@+id/UserImage"
+            android:fontFamily="@font/assistant_bold"
+            android:text="Usuário Anônimo"
+            android:textColor="@color/dark_app"/>
+
+        <ImageButton
+            android:id="@+id/cartbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25sp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/shopping_cart_icon"/>
+
+        <TextView
+            android:id="@+id/cartText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/cartbtn"
+            android:fontFamily="@font/assistant_bold"
+            android:text="Carrinho"
+            android:textColor="@color/dark_app"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/catalogtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20sp"
+            android:fontFamily="@font/assistant_bold"
+            android:text="Catálogo de Plantas"
+            android:textColor="@color/dark_app"
+            android:textSize="20sp"
+            android:layout_marginBottom="10sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- SUCULENTAS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="Suculentas"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_app"
+                    android:fontFamily="@font/assistant_bold"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSuculentas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="12dp"/>
+            </LinearLayout>
+
+            <!-- TROPICAIS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="Tropicais"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/assistant_bold"
+                    android:textColor="@color/dark_app"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTropicais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="12dp"/>
+            </LinearLayout>
+
+            <!-- ERVAS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="Ervas"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_app"
+                    android:fontFamily="@font/assistant_bold"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvErvas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="12dp"/>
+            </LinearLayout>
+
+            <!-- FLORES -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="Flores"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_app"
+                    android:fontFamily="@font/assistant_bold"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFlores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="12dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
