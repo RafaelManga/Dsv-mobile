@@ -37,6 +37,13 @@
         android:textSize="13sp"
         android:fontFamily="@font/assistant_bold"/>
 
+     <CheckBox
+        android:id="@+id/checkWishlist"
+        android:text="Desejos"
+        android:buttonTint="@color/green_app" 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+        
     <ImageButton
         android:id="@+id/addCartBtn"
         android:layout_width="45dp"
